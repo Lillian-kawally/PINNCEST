@@ -5,12 +5,12 @@ Evaluate the trained baseline model across multiple SNR levels, with
 multiple noise realizations per SNR to enable mean +/- s.d. plotting.
 
 Reuses the trained baseline checkpoint(s) from run_ablation.py
-(e.g., checkpoints/PINN/baseline_s42/final.pth).
+(e.g., checkpoints/PINNCEST/baseline_s42/final.pth).
 
 Usage:
     python run_snr_eval.py \
         --datapath /your/data \
-        --model PINN \
+        --model PINNCEST \
         --train_seeds 42 123 2024 \
         --snr_list 20 30 40 50 60 80 100 \
         --noise_repeats 5
