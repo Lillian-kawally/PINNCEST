@@ -1,7 +1,7 @@
-# PAFN Model Configuration (Cross-power Attention Spectral Evolution Network)
+# PINNCEST Model Configuration (Cross-power Attention Spectral Evolution Network)
 
 # --- Core Architecture Parameters ---
-d_model: 128              # Hidden dimension for CNN and Attention blocks 128-->256
+d_model: 128                 # Hidden dimension for CNN and Attention blocks 128-->256
 nhead: 8                     # Number of heads for Self and Cross-Attention 8-->4
 num_layers: 4                # Number of transformer layers per B1 stream 4-->5 [20260212]
 fit_range: [-5, 5]           # Frequency offset range (ppm) for training/fitting
@@ -24,8 +24,8 @@ lr: 5e-4                     # Recommended starting LR for AdamW (use 1e-4 if us
 weight_decay: 1e-4           # Regularization to prevent overfitting on synthetic data 1e-4 --> 5e-3
 f_w: 1
 k_w: 1
-z_loss_weight: 10           # [20260211] z_w used for grid search
+z_loss_weight: 10            # [20260211] z_w used for grid search
 
 # --- Visualization & Debug ---
-plot: false                   # Enable matplotlib plotting every 10 epochs
+plot: false                  # Enable matplotlib plotting every 10 epochs
 debug: false
